@@ -95,7 +95,7 @@ const HeroPage = () => {
           </div>
         </div>
       </div>
-      <div className="hero-bg absolute inset-0 z-[-10] h-[150dvh] w-auto object-fill bg-no-repeat overflow-hidden bg-[url('/assets/background/background.webp')]"></div>
+      <div className="hero-bg absolute inset-0 z-[-10] h-[100vh] w-screen object-fill bg-no-repeat overflow-hidden bg-[url('/assets/background/background.webp')] bg-cover bg-center"></div>
     </main>
   );
 };
