@@ -10,7 +10,7 @@ const lato = Lato({
 
 export default function Staking() {
   return (
-    <section className="h-screen lg:h-screen flex relative justify-center items-center pt-24 px-4 overflow-none bg-[url('/assets/background/background.webp')]">
+    <section className="h-screen lg:h-screen flex relative justify-center items-center pt-24 px-4 overflow-none bg-[url('/assets/background/background.webp')] bg-cover bg-center">
       <div className="container rounded-t-2xl overflow-hidden max-w-[1048px]">
         <div className="title px-8 py-4 bg-[#A939FF]">
           <span
