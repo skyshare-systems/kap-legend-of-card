@@ -17,10 +17,7 @@
 }
 
 body {
-  background-image: url("../public/assets/background/background.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background: black;
   height: 100vh;
   user-select: none;
 }
