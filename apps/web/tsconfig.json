@@ -53,6 +53,9 @@
         "name": "next"
       }
     ],
+    "paths": {
+      "@/*": ["./*"]
+    },
 
     "module": "esnext",
     "target": "ESNext",
