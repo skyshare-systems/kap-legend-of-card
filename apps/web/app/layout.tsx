@@ -1,8 +1,8 @@
-import NavbarPage from "@/components/NavbarPage";
+import NavbarPage from "components/NavbarPage";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import FooterPage from "@/components/FooterPage";
-import WagmiProviders from "@/providers/WagmiProviders";
+import FooterPage from "components/FooterPage";
+import WagmiProviders from "providers/WagmiProviders";
 
 const inter = Inter({ subsets: ["latin"] });
 
