@@ -1,13 +1,12 @@
 import React from "react";
-import { Oswald } from "next/font/google";
-const oswald = Oswald({ subsets: ["latin"] });
+import { Oswald, Lato } from "next/font/google";
 import Image from "next/image";
 
-import { Lato } from "next/font/google";
 const lato = Lato({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
 });
+const oswald = Oswald({ subsets: ["latin"] });
 
 const HowItWorksPage = () => {
   return (

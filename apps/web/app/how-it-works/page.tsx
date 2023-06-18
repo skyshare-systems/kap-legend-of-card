@@ -1,4 +1,4 @@
-import HowItWorksPage from "@/components/HowItWorksPage";
+import HowItWorksPage from "components/HowItWorksPage";
 import React from "react";
 
 const HowItWorks = () => {
