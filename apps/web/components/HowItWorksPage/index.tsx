@@ -12,7 +12,7 @@ const lato = Lato({
 const HowItWorksPage = () => {
   return (
     <section className="flex relative justify-center items-start pt-32 bg-[url('/assets/background/background.webp')] bg-cover bg-center bg-fixed">
-      <div className="absolute bottom-0 h-[190vh] bg-black w-full "></div>
+      {/* <div className="absolute bottom-0 h-[190vh] bg-black w-full "></div> */}
       <div className="container flex flex-col max-w-[1200px] justify-center gap-4 p-4 lg:gap-8 lg:p-24 bg-black/40 backdrop-blur-sm w-full">
         <h1
           className={`text-center ${oswald.className} text-white uppercase text-4xl font-semibold`}
