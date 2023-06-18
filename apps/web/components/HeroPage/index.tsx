@@ -1,14 +1,15 @@
 "use client";
 
-import { Oswald } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Oswald } from "next/font/google";
+import React from "react";
 const oswald = Oswald({ subsets: ["latin"] });
 
 const HeroPage = () => {
   return (
-    <main className="flex relative justify-center items-start py-24">
+    <main className="flex relative justify-center items-start py-24 bg-[url('/assets/background/background.webp')] bg-cover bg-center bg-fixed">
       <div className="container flex flex-col max-w-[1200px] justify-start gap-4 items-center p-4 lg:gap-8 lg:px-0">
         <div className="hero-container flex flex-col">
           <div className="banner flex flex-wrap">
@@ -17,13 +18,15 @@ const HeroPage = () => {
               src={"/assets/banner_left.webp"}
               width={604}
               height={581}
-            ></Image>
-            <Image
-              alt=""
-              src={"/assets/banner_right.webp"}
-              width={444}
-              height={581}
-            ></Image>
+            />
+            <Link href="/staking">
+              <Image
+                alt=""
+                src={"/assets/banner_right.webp"}
+                width={444}
+                height={581}
+              />
+            </Link>
           </div>
           <span className="grow text-center text-white/50 text-[10px] leading-[12px]">
             PokerNews. (n.d.). 2023 WSOP [Online article]. Retrieved from{" "}
@@ -50,7 +53,7 @@ const HeroPage = () => {
                 src={"/assets/profile_vincent.webp"}
                 width={515}
                 height={267}
-              ></Image>
+              />
             </div>
             <div className="p-2 lg:mt-14">
               <Image
@@ -58,7 +61,7 @@ const HeroPage = () => {
                 src={"/assets/profile_anson.webp"}
                 width={515}
                 height={267}
-              ></Image>
+              />
             </div>
             <div className="row-start-2 p-2 lg:-mt-14">
               <Image
@@ -66,7 +69,7 @@ const HeroPage = () => {
                 src={"/assets/profile_sparrow.webp"}
                 width={515}
                 height={267}
-              ></Image>
+              />
             </div>
             <div className="row-start-2 p-2 lg:mt-14">
               <Image
@@ -74,7 +77,7 @@ const HeroPage = () => {
                 src={"/assets/profile_soojo.webp"}
                 width={515}
                 height={267}
-              ></Image>
+              />
             </div>
             <div className="row-start-3 p-2 lg:-mt-14">
               <Image
@@ -82,7 +85,7 @@ const HeroPage = () => {
                 src={"/assets/profile_ivan.webp"}
                 width={515}
                 height={267}
-              ></Image>
+              />
             </div>
             <div className="row-start-3 p-2 lg:mt-14">
               <Image
@@ -90,12 +93,11 @@ const HeroPage = () => {
                 src={"/assets/profile_nevan.webp"}
                 width={515}
                 height={267}
-              ></Image>
+              />
             </div>
           </div>
         </div>
       </div>
-      <div className="hero-bg absolute inset-0 z-[-10] h-[150dvh] w-auto object-fill bg-no-repeat overflow-hidden bg-[url('/assets/background/background.webp')]"></div>
     </main>
   );
 };

@@ -4,6 +4,7 @@ import { Oswald } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ConnectWallet } from "../ConnectWallet";
 
 const oswald = Oswald({ subsets: ["latin"] });
 
@@ -20,11 +21,7 @@ const NavbarPage = () => {
     },
     {
       name: "How it works",
-      linkUrl: "/how",
-    },
-    {
-      name: "Connect Wallet",
-      linkUrl: "/connect",
+      linkUrl: "/how-it-works",
     },
   ];
 
@@ -42,13 +39,15 @@ const NavbarPage = () => {
     <nav className="flex justify-center items-center p-4 lg:py-4 bg-black fixed top-0 w-screen z-50">
       <div className="wrapper max-w-[800px] flex grow justify-between">
         <div className="title-wrapper p-2 flex justify-center items-center">
-          <Image
-            alt="header_logo"
-            src={"/assets/logo/header_logo.webp"}
-            height={98}
-            width={98}
-            className="h-8 w-auto lg:h-12"
-          ></Image>
+          <Link href="https://legendofcards.io/">
+            <Image
+              alt="header_logo"
+              src={"/assets/logo/header_logo.webp"}
+              height={98}
+              width={98}
+              className="h-8 w-auto lg:h-12"
+            />
+          </Link>
         </div>
         <div className="buttons-wrapper flex justify-center items-center">
           <div
@@ -77,6 +76,7 @@ const NavbarPage = () => {
                 {data.name}
               </Link>
             ))}
+            <ConnectWallet />
           </div>
         </div>
         <div
@@ -100,6 +100,7 @@ const NavbarPage = () => {
                 {data.name}
               </Link>
             ))}
+            <ConnectWallet />
           </div>
         </div>
       </div>
