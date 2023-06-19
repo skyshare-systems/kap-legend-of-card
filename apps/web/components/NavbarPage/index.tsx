@@ -16,10 +16,6 @@ const NavbarPage = () => {
       linkUrl: "/",
     },
     {
-      name: "Staking",
-      linkUrl: "/staking",
-    },
-    {
       name: "How it works",
       linkUrl: "/how-it-works",
     },
@@ -28,10 +24,10 @@ const NavbarPage = () => {
   const [openSide, setOpenSide] = useState(false);
 
   useEffect(() => {
-    if (openSide) {
-      document.body.style.overflowY = "hidden";
-    } else {
-      document.body.style.overflowY = "auto";
+    {
+      openSide
+        ? (document.body.style.overflowY = "hidden")
+        : (document.body.style.overflowY = "auto");
     }
   }, [openSide]);
 
@@ -67,6 +63,7 @@ const NavbarPage = () => {
               <Link
                 key={index}
                 href={data.linkUrl}
+                onClick={() => setOpenSide(!openSide)}
                 className={`text-white capitalize self-stretch px-4 py-2 text-xl ${
                   oswald.className
                 } ${
@@ -76,7 +73,6 @@ const NavbarPage = () => {
                 {data.name}
               </Link>
             ))}
-            <ConnectWallet />
           </div>
         </div>
         <div
@@ -91,6 +87,7 @@ const NavbarPage = () => {
               <Link
                 key={index}
                 href={data.linkUrl}
+                onClick={() => setOpenSide(!openSide)}
                 className={`text-white capitalize self-stretch px-4 py-2 text-2xl ${
                   oswald.className
                 } ${
@@ -100,7 +97,6 @@ const NavbarPage = () => {
                 {data.name}
               </Link>
             ))}
-            <ConnectWallet />
           </div>
         </div>
       </div>
