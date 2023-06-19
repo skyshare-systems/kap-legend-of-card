@@ -14,7 +14,7 @@ const lato = Lato({
 
 const TEAM_LOC_DATA = [
   {
-    name: "Vincent L",
+    name: "Vincent Li",
     imgUrl: "/assets/team-loc-assets/profile_vincent.webp",
     title: "Co-Founder of LoC",
     achievement: "Champion Of Wynn Summer Classic Main Event",
@@ -102,7 +102,7 @@ const TEAM_LOC_DATA = [
 
 const HeroPage = () => {
   return (
-    <main className="flex relative justify-center items-start py-24 bg-[url('/assets/background/background.webp')] bg-cover bg-center bg-fixed">
+    <main className="flex relative justify-center items-start py-24 bg-[url('/assets/background/background.webp')] bg-inherit md:bg-cover bg-left-top bg-fixed">
       <div className="container flex flex-col max-w-[1200px] justify-start gap-4 items-center p-4 lg:gap-8 lg:px-0">
         <div className="hero-container flex flex-col">
           <div className="banner flex flex-wrap">
@@ -112,14 +112,13 @@ const HeroPage = () => {
               width={604}
               height={581}
             />
-            <Link href="/staking">
-              <Image
-                alt=""
-                src={"/assets/banner_right.webp"}
-                width={444}
-                height={581}
-              />
-            </Link>
+
+            <Image
+              alt=""
+              src={"/assets/banner_right.webp"}
+              width={444}
+              height={581}
+            />
           </div>
           <span className="grow text-center text-white/50 text-[10px] leading-[12px]">
             PokerNews. (n.d.). 2023 WSOP [Online article]. Retrieved from{" "}
