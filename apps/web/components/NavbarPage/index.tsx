@@ -56,14 +56,13 @@ const NavbarPage = () => {
               height={98}
               width={98}
               className="h-6 w-auto"
-            ></Image>
+            />
           </div>
           <div className="hidden gap-4 items-center justify-center lg:flex">
             {links.map((data, index) => (
               <Link
                 key={index}
                 href={data.linkUrl}
-                onClick={() => setOpenSide(!openSide)}
                 className={`text-white capitalize self-stretch px-4 py-2 text-xl ${
                   oswald.className
                 } ${
