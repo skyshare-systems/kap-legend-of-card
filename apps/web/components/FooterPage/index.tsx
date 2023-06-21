@@ -16,7 +16,7 @@ const FooterPage = () => {
         <span
           className={`${lato.className} text-white text-lg font-medium order-2 lg:order-1`}
         >
-          ©2022 TEZZA LABS PTE. LTD
+          ©2023 TEZZA LABS PTE. LTD
         </span>
         <Image
           alt="footer_logo"
