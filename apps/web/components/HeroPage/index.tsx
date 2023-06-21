@@ -14,32 +14,32 @@ const lato = Lato({
 
 const TEAM_LOC_DATA = [
   {
+    name: "Anson Tsang",
+    imgUrl: "/assets/team-loc-assets/profile_anson.webp",
+    title: "",
+    achievement: "3 Times WSOP Bracelet Winner",
+    livewinnings: "Live Tournament Winnings: 3.2M",
+    classname: "p-2 lg:-mt-14",
+    henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=134003",
+    youtubeUrl: "",
+    wsopUrl: "https://www.wsop.com/players/profile/?playerid=236667",
+    somuchpokerUrl: "https://somuchpoker.com/player/yan-shing-anson-tsang/",
+    pokernewsUrl: "",
+  },
+
+  {
     name: "Vincent Li",
     imgUrl: "/assets/team-loc-assets/profile_vincent.webp",
     title: "Co-Founder of LoC",
     achievement: "Champion Of Wynn Summer Classic Main Event",
     livewinnings: "Live Tournament Winnings: 1M",
-    classname: "p-2 lg:-mt-14",
+    className: "p-11 lg:mt-16",
     henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=274313",
     youtubeUrl: "",
     wsopUrl: "",
     somuchpokerUrl: "",
     pokernewsUrl:
       "https://www.pokernews.com/news/2018/06/li-and-coombe-chop-the-wynn-summer-classic-1100-nlh-1m-gtd-31178.htm",
-  },
-
-  {
-    name: "Anson Tsang",
-    imgUrl: "/assets/team-loc-assets/profile_anson.webp",
-    title: "",
-    achievement: "3 Times WSOP Bracelet Winner",
-    livewinnings: "Live Tournament Winnings: 3.2M",
-    className: "p-11 lg:mt-16",
-    henbobUrl: "https://pokerdb.thehendonmob.com/player.php?a=r&n=134003",
-    youtubeUrl: "",
-    wsopUrl: "https://www.wsop.com/players/profile/?playerid=236667",
-    somuchpokerUrl: "https://somuchpoker.com/player/yan-shing-anson-tsang/",
-    pokernewsUrl: "",
   },
 
   {
